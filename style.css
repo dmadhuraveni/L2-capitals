@@ -1,0 +1,660 @@
+.questrial-regular {
+  font-family: "Questrial", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+     font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden; /* hides only horizontal scroll */
+    overflow-y: auto;   /* allows vertical scroll */
+}
+
+
+.hero-container {
+     background-image: 
+        linear-gradient(rgba(78, 78, 78, 0.5), rgba(78, 78, 78, 0.5)),
+        url('loan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    height: 39em;
+   align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 13px;
+}
+
+.CONT {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between "Contact Us" and button */
+  white-space: nowrap;    /* never break into 2 lines */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;      /* gives breathing room */
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+
+
+.cont{
+    width: auto;
+}
+
+.logo {
+    height: 4em;
+}
+
+.get-in-touch {
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+    bottom: 40px;
+}
+
+.hero-text {
+    max-width: 50%;
+     position: relative;
+    bottom: 10px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 4em;
+    position: relative;
+    left: 1.25em;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+}
+p{
+    font-weight: 590;
+    position: relative;
+    left: 5.20em;
+}
+
+.logo {
+position: relative;
+left: 4.7em;
+}
+
+.hero-text h1 span {
+    color: #c5f86d; /* Highlight color */
+    font-weight: 900;
+}
+
+/* .hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+}
+
+.hero-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.hero-form button {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+ .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    height: 27em;
+}
+
+#name, #phone, #email{
+    background-color: #EBEBEB;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #dadada;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #333;
+}
+
+/* Auto scroll */
+.banks-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.logos {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.logos img {
+  height: 30px;
+  max-width: 120px;      /* prevents super wide logos */
+  width: auto;
+  margin: 0 40px;
+  object-fit: contain;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.banks {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #fff;
+}
+
+.why-us {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.why-us h2 {
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* container centers inline-block children */
+.features {
+  text-align: center;
+  /* optional gap — uses margin on cards instead */
+}
+
+/* make cards inline-block so they center as a group */
+.feature-card {
+  display: inline-block;
+  vertical-align: top;       /* aligns top edges */
+  width: 300px;              /* fixed card width */
+  margin: 0 18px 28px;      /* horizontal spacing + bottom spacing for wrap */
+  padding: 30px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background: #fff;
+  text-align: center;        /* center contents */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  height: 280px;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* circle icon */
+.feature-card .icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #eaeaea;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+/* black line: inline-block so width transitions expand symmetrically */
+.feature-card .line {
+  display: inline-block;
+  height: 6px;
+  width: 56px;                       /* initial width */
+  background: #111;
+  border-radius: 4px;
+  margin: 0 auto 18px;
+  transition: width 420ms cubic-bezier(.4,0,.2,1); /* ease-in-out like */
+}
+
+/* expanded on hover (stays centered because it's inline-block) */
+.feature-card:hover .line {
+  width: 120px;                      /* expanded width */
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+}
+
+.feature-card p {
+ position: static;     /* reset the global relative+left */
+  left: auto;           /* clear the offset */
+  text-align: center;   /* center the text */
+  margin-top: 13px;
+  color: #666;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 720px) {
+  .feature-card {
+    display: block;       /* full-width stacked cards */
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 22px;
+  }
+}
+
+
+/* Testimonials */
+
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root{
+  --accent: #f7f7f7;
+  --bubble-gray: #cfcfcf;
+  --text: #222;
+  --muted: #6b6b6b;
+}
+
+/* body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--text); } */
+
+/* Section background (loan2.jpg should be in same folder) */
+.testimonial-section{
+  background-image: url('loan2.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  height: 27em;
+}
+
+/* Carousel container */
+.carousel {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Viewport hides overflowing slides */
+.viewport {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* Slide track */
+.slides {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(.2,.9,.2,1);
+}
+
+/* Single slide: shows 2 testimonial blocks side-by-side */
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 0px 0;
+  min-height: 50px;
+}
+
+/* Left / right testimonial block */
+.testimonial-block {
+  width: 48%;
+  display: flex;
+  flex: 0 0 35%; 
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Speech bubble base */
+.bubble {
+  position: relative;
+  padding: 30px 34px;
+  border-radius: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  width: 90%;
+}
+
+/* CSS variable for pseudo-triangle color */
+.bubble { --bubble-bg: #fff; background: var(--bubble-bg); color: var(--text); }
+.bubble.white { --bubble-bg: #fff; background: var(--bubble-bg); color: var(--text); }
+.bubble.gray  { --bubble-bg: var(--bubble-gray); background: var(--bubble-bg); color: var(--text); }
+
+/* triangle pointer centered below bubble */
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  transform: translateX(-50%);
+  bottom: -16px;
+  border-width: 16px 14px 0;
+  border-style: solid;
+  border-color: var(--bubble-bg) transparent transparent;
+  width: 0;
+  height: 0;
+}
+
+/* small profile card below each bubble */
+.profile-card {
+  margin-top: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.95);
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* avatar circle */
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#ddd,#bbb);
+  flex: 0 0 44px;
+}
+
+/* name + role */
+.meta .name { font-weight: 700; font-size: 14px; }
+.meta .role { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(191, 191, 191, 0.95);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.arrow.prev { left: 8px; }
+.arrow.next { right: 8px; }
+
+.arrow:focus { outline: 3px solid rgba(0,0,0,0.12); }
+
+/* responsive: stack testmonials on small screens */
+@media (max-width: 880px) {
+  .slide { flex-direction: column; padding: 28px; gap: 18px; min-height: auto; }
+  .testimonial-block { width: 100%; }
+  .bubble { font-size: 14px; }
+  .profile-card { align-self: flex-start; }
+  .arrow.prev { left: 4px; }
+  .arrow.next { right: 4px; }
+}
+
+@media (max-width: 480px) {
+  .bubble { padding: 16px; font-size: 13px; border-radius: 10px; }
+  .avatar { width: 36px; height: 36px; }
+  .profile-card { padding: 6px 10px; gap: 8px; }
+}
+
+
+/* privacy section */
+/* Scoped: Features section only (will not override global rules) */
+.features-section {
+  padding: 48px 20px;
+  background: transparent;
+  margin-top: 50px;
+   /* keep whatever page background you have */
+}
+
+/* inner container centers content and limits width */
+.features-section .features-inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: stretch;
+ 
+}
+
+/* each card */
+.features-section .feature-card{
+  flex: 1 1 300px;               /* grow, shrink, base width */
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 17px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(16,24,40,0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+   height: 7.5em;
+}
+
+/* hover lift */
+.features-section .feature-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(16,24,40,0.10);
+}
+
+/* grey child container behind the icon */
+.features-section .icon-wrapper{
+  width: 140px;
+  height: 90px;
+  min-width: 64px;              /* prevents shrinking */
+  border-radius: 10px;
+  background: #f6f4f4;          /* light grey box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* actual icon */
+.features-section .feature-icon{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
+
+/* title text */
+.features-section .feature-title{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0b0b0b;
+  text-align: center;
+  position: relative;
+  left: 0px;
+  letter-spacing: 0.04em;
+}
+
+/* responsive: stack vertically on smaller screens */
+@media (max-width: 820px) {
+  .features-section .features-inner{
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .features-section .feature-card{
+    max-width: 760px;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .features-section .icon-wrapper {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+
+  .features-section .feature-icon { width: 24px; height: 24px; }
+  .features-section .feature-title { font-size: 16px; }
+}
+
+
+/* Footer */
+.footer {
+  background-color: #3d3b4f; /* dark slate */
+  padding: 30px 40px;
+  color: #f5f5f5;
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 125px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+/* Left side (logo) */
+.footer-left .footer-logo {
+  width: 180px;       /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Right side */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.footer-right p {
+  margin: 90px;
+  margin-bottom: 10px;
+  margin-top: 11px;
+   font-weight:bold;
+  letter-spacing: 0.05em;
+}
+
+.footer-right a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight:bold;
+  letter-spacing: 0.05em;
+}
+
+.footer-right a:hover {
+  color: #ffffff;
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-left .footer-logo {
+    width: 120px;
+  }
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loan Landing Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+</style>
+</head>
+
+<body>
+
+     <!-- Header + Hero in Same Container with Background Image -->
+    <div class="hero-container">
+
+        <!-- Header -->
+        <!-- <header class="header">
+             <img src="logo.png" alt="Capital Partners Logo" class="logo">
+                <nav class="CONT">
+                    <a href="#" class="contact-link" style="text-decoration: none; color: white;">Contact Us</a>
+                    <button class="get-in-touch">Get in touch</button>
+    </nav>
+        </header> -->
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo" />
+  </div>
+
+  <nav class="nav-links">
+    <a href="#" class="contact-link" style="text-decoration: none; color: rgb(0, 0, 0);">Contact Us</a>
+  </nav>
+
+  <div class="hamburger">
+    ☰
+  </div>
+
+  <div class="mobile-menu">
+    <a href="#" class="contact-link">Contact Us</a>
+  </div>
+</header>
+
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Get Closer to Your Goals with an Instant <span>Personal Loan</span></h1>
+                <p>Explore flexible Personal Loan options tailored to meet your needs.</p>
+            </div>
+
+            <!-- <form class="hero-form">
+                <input type="text" placeholder="Enter your name">
+                <input type="tel" placeholder="Enter your phone number">
+                <input type="email" placeholder="Enter your mail id">
+                <button type="submit">APPLY NOW</button>
+            </form> -->
+             <form action="send_email.php" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+    <label for="email">Email Id</label>
+    <input type="email" id="email" name="email" placeholder="Enter your mail id">
+
+    <button type="submit">APPLY NOW</button>
+</form>
+        </div>
+
+    </div>
+
+
+    <!-- Banks Section -->
+    <section class="banks-scroll">
+  <div class="logos">
+    <!-- <img src="bank0.png" alt="Bank 0"> -->
+    <img src="bank2.png" alt="Bank 2">
+    <img src="bank3.png" alt="Bank 3">
+    <img src="bank4.png" alt="Bank 4">
+    <img src="bank5.png" alt="Bank 5">
+    <img src="bank6.png" alt="Bank 6">
+    <!-- duplicate for smooth infinite loop -->
+    <!-- <img src="bank0.png" alt="Bank 0"> -->
+    <img src="bank2.png" alt="Bank 2">
+    <img src="bank3.png" alt="Bank 3">
+    <img src="bank4.png" alt="Bank 4">
+    <img src="bank5.png" alt="Bank 5">
+    <img src="bank6.png" alt="Bank 6">
+  </div>
+</section>
+
+    <!-- <section class="why-us">
+  <h2>Why Choose Us?</h2> -->
+
+  <!-- <div class="features">
+    <div class="feature-card">
+      <div class="icon" aria-hidden="true"><img src="img1.png" alt="Easy Apply"></div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Fast &amp; Easy Process</h3>
+      <p>Apply online in just 5 minutes</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon" aria-hidden="true"></div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Low Interest Rates</h3>
+      <p>Affordable EMI plans</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon" aria-hidden="true"></div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Flexible Repayment Options</h3>
+      <p>Tailored to your needs</p>
+    </div>
+  </div> -->
+  <section class="why-us">
+  <h2>Why Choose Us?</h2>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon">
+        <img src="img1.png" alt="Fast & Easy Process">
+      </div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Fast & Easy Process</h3>
+      <p>Apply online in just 5 minutes</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">
+        <img src="img2.png" alt="Low Interest Rates">
+      </div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Low Interest Rates</h3>
+      <p>Affordable EMI plans</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">
+        <img src="img3.png" alt="Flexible Repayment Options">
+      </div>
+      <span class="line" aria-hidden="true"></span>
+      <h3>Flexible Repayment Options</h3>
+      <p>Tailored to your needs</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<!-- testimonials -->
+    <section class="testimonial-section" id="testimonials">
+    <div class="carousel" aria-roledescription="carousel">
+      <button class="arrow prev" aria-label="Previous slide">‹</button>
+
+      <div class="viewport">
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="testimonial-block">
+              <div class="bubble white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-block">
+              <div class="bubble gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="testimonial-block">
+              <div class="bubble white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-block">
+              <div class="bubble gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="testimonial-block">
+              <div class="bubble white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-block">
+              <div class="bubble gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide">
+            <div class="testimonial-block">
+              <div class="bubble white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-block">
+              <div class="bubble gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.
+              </div>
+              <div class="profile-card">
+                <div class="avatar"></div>
+                <div class="meta">
+                  <div class="name">John Leo</div>
+                  <div class="role">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- .slides -->
+      </div> <!-- .viewport -->
+
+      <button class="arrow next" aria-label="Next slide">›</button>
+    </div>
+  </section>
+
+<!-- privacy -->
+  <!-- <section class="features-section" aria-label="Key features">
+  <div class="features-inner">
+    <div class="feature-card">
+      <div class="icon-wrapper">
+        <img src="icon1.png" alt="Secure Application" class="feature-icon">
+      </div>
+      <p class="feature-title">100% Secure Application</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-wrapper">
+        <img src="icon2.png" alt="Verified & Licensed" class="feature-icon">
+      </div>
+      <p class="feature-title">Verified & Licensed Lender</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-wrapper">
+        <img src="icon3.png" alt="Data Privacy" class="feature-icon">
+      </div>
+      <p class="feature-title">Data Privacy Guaranteed</p>
+    </div>
+  </div>
+</section> -->
+
+<section class="privacy-section">
+  <div class="privacy-container">
+
+    <div class="privacy-card">
+      <div class="icon-wrapper">
+        <img src="icon1.png" alt="Secure Application">
+      </div>
+      <h3>100% Secure Application</h3>
+    </div>
+
+    <div class="privacy-card">
+      <div class="icon-wrapper">
+        <img src="icon2.png" alt="Verified & Licensed Lender">
+      </div>
+      <h3>Verified & Licensed Lender</h3>
+    </div>
+
+    <div class="privacy-card">
+      <div class="icon-wrapper">
+        <img src="icon3.png" alt="Data Privacy Guaranteed">
+      </div>
+      <h3>Data Privacy Guaranteed</h3>
+    </div>
+  </section>
+
+
+
+<!-- footer -->
+ <footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Logo only -->
+    <div class="footer-left">
+      <img src="logo.png" alt="Capital Partners Logo" class="footer-logo">
+    </div>
+
+    <!-- Right: Copyright + Links -->
+    <div class="footer-right">
+      <p>© 2025 QuickLoans Inc.</p>
+      <span>|</span>
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- ... other page sections ... -->
+
+  <script>
+    (function () {
+      const slidesContainer = document.querySelector('.slides');
+      const slides = document.querySelectorAll('.slide');
+      const nextBtn = document.querySelector('.arrow.next');
+      const prevBtn = document.querySelector('.arrow.prev');
+      const carousel = document.querySelector('.carousel');
+      let current = 0;
+      const count = slides.length;
+      const AUTO_INTERVAL = 5000; // ms
+      let timer = null;
+
+      function goTo(index) {
+        current = ((index % count) + count) % count; // wrap
+        slidesContainer.style.transform = `translateX(-${current * 100}%)`;
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      nextBtn.addEventListener('click', () => { next(); restartAutoplay(); });
+      prevBtn.addEventListener('click', () => { prev(); restartAutoplay(); });
+
+      // pause on hover
+      carousel.addEventListener('mouseenter', () => { stopAutoplay(); });
+      carousel.addEventListener('mouseleave', () => { startAutoplay(); });
+
+      // autoplay
+      function startAutoplay() {
+        stopAutoplay();
+        timer = setInterval(() => { next(); }, AUTO_INTERVAL);
+      }
+      function stopAutoplay() {
+        if (timer) { clearInterval(timer); timer = null; }
+      }
+      function restartAutoplay() { stopAutoplay(); startAutoplay(); }
+
+      // init
+      goTo(0);
+      startAutoplay();
+
+      // optional: keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { prev(); restartAutoplay(); }
+        if (e.key === 'ArrowRight') { next(); restartAutoplay(); }
+      });
+    })();
+
+
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.style.display =
+      mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  </script>
+
+</body>
+
+</html>
+s
